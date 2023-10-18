@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}Sistema de Gestión PPCC{% endblock %}</title>
+    {% load static %}
+
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <meta http-equiv="refresh" content="5;url={% url 'board:index' %}">
+</head>
+<body>
+<br>
+<br>
+<br>
+<div style="text-align: center;">
+    <img class="mb-4" src="../static/images/error.png" width="200" height="200" style="margin: auto;">
+    <h3 style="text-align: center;">Redirigiendo a la página de inicio en 5 segundos...</h3>
+    <br>
+    <br>
+    <div class="spinner-border text-primary" role="status" style="font-size: 9rem;">
+  <span class="visually-hidden">Loading...</span>
+</div>
+</div>
+
+</body>
+</html>
